@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+          }
+          body {
+            font-family: 'Inter', sans-serif;
+          }
+
+          h1 {
+            text-align: center;
+            color: orange;
+          }
+
+          .main-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px;
+          }
+        
+          .form-wrap {
+            margin: 0 auto;
+            max-width: 570px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+          }
+        
+          .form-img {
+            margin-bottom: 45px;
+          }
+
+          input {
+            width: 100%;
+            padding: 13px 22px;
+            border-radius: 5px;
+            border: 1px solid #dde3ec;
+            background: #ffffff;
+            font-weight: 500;
+            font-size: 16px;
+            color: #07074d;
+            outline: none;
+            resize: none;
+          }
+
+          .btn {
+            text-align: center;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 14px 25px;
+            border: none;
+            font-weight: 500;
+            background-color: #6a64f1;
+            color: white;
+            cursor: pointer;
+            margin-top: 25px;
+          }
+          .btn:hover {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+          }
+    </style>
+</head>
+<body>
+    <div class="main-wrap">
+        <div class="form-wrap">
+    <h1>Add a New Job</h1>
+    <img src="https://img.freepik.com/free-vector/man-search-hiring-job-online-from-laptop_1150-52728.jpg">
+    <form action="/addJOB" method="POST">
+        <label for="jobName">Job Name:</label>
+        <input type="text" id="jobName" name="jname" required><br>
+        <label for="jobID">Job ID:</label>
+        <input type="text" id="jobID" name="jobID" required><br>
+        <label for="jobLocation">Job Location:</label>
+        <input type="text" id="jobLocation" name="location" required><br>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required><br>
+        <label for="jobDescription">Job Description:</label><br>
+        <textarea id="jobDescription" name="description" rows="4" cols="50" required></textarea><br>
+        <button class="btn" type="submit">Add Job</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
